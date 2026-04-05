@@ -6,7 +6,7 @@ declare namespace Api {
    */
   namespace Auth {
     interface LoginToken {
-      token: string;
+      accessToken: string;
       refreshToken: string;
     }
 
@@ -14,7 +14,8 @@ declare namespace Api {
       userId: string;
       userName: string;
       roles: string[];
-      buttons: string[];
+      avatarUrl?: string;
+      buttons?: string[];
     }
   }
 }
